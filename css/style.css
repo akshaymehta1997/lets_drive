@@ -1,0 +1,28 @@
+body{
+  background-color: #f0f2f5;
+}
+
+/* --------------------------------------footter----------------------------- */
+
+.footer{
+  background-color: #343A40;
+  
+}
+
+.footer ul{
+  margin: 0;
+  padding: 0;
+}
+
+.footer li{
+  list-style: none;
+}
+
+.footer a{
+  color: #808080;
+}
+
+.footer ul li:first-child{
+  color: #f0f2f5;
+}
+
