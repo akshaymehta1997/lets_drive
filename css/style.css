@@ -1,28 +1,89 @@
-body{
+body {
   background-color: #f0f2f5;
+}
+
+/* --------------------------------------------------main- new car--------------------------------------- */
+
+section.newcars{
+  margin: 60px auto;
+}
+
+.search button{
+  margin-top: 20px;
+}
+
+.search{
+  position: absolute;
+  top: 140px;
+  left: 70px;
+  z-index: 100;
+}
+
+.cars{
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.car{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.car-category{
+  text-align: center;
+}
+
+.car-category a{
+  text-decoration: none;
+  color: #808080;
+  font-size: 30px;
+  margin-right: 90px;
+}
+
+.brand h1{
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 /* --------------------------------------footter----------------------------- */
 
-.footer{
-  background-color: #343A40;
-  
+.footer {
+  background-color: #343a40;
 }
 
-.footer ul{
+.footer ul {
   margin: 0;
+  margin-top: 30px;
   padding: 0;
 }
 
-.footer li{
+.footer li {
   list-style: none;
 }
 
-.footer a{
+.footer a {
   color: #808080;
 }
 
-.footer ul li:first-child{
+.footer ul li:first-child {
   color: #f0f2f5;
+}
+.copyright {
+  text-align: center;
+  background-color: black;
+  color: #808080;
+  list-style: none;
+}
+.footer .social-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 70px;
+}
+.footer .socials {
+  margin: 20px auto;
+}
+.footer {
+  text-align: center;
 }
 
