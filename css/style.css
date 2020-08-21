@@ -4,43 +4,43 @@ body {
 
 /* --------------------------------------------------main- new car--------------------------------------- */
 
-section.newcars{
+section.newcars {
   margin: 60px auto;
 }
 
-.search button{
+.search button {
   margin-top: 20px;
 }
 
-.search{
+.search {
   position: absolute;
   top: 140px;
   left: 70px;
   z-index: 100;
 }
 
-.cars{
+.cars {
   overflow: scroll;
   white-space: nowrap;
 }
 
-.car{
+.car {
   display: inline-block;
   margin-right: 20px;
 }
 
-.car-category{
+.car-category {
   text-align: center;
 }
 
-.car-category a{
+.car-category a {
   text-decoration: none;
   color: #808080;
   font-size: 30px;
   margin-right: 90px;
 }
 
-.brand h1{
+.brand h1 {
   margin-top: 30px;
   margin-bottom: 0;
   text-align: center;
@@ -86,4 +86,7 @@ section.newcars{
 .footer {
   text-align: center;
 }
-
+.footer img.social-logo:hover {
+  transform: scale(1.5);
+  transition: all 500;
+}
