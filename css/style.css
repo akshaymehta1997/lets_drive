@@ -3,7 +3,9 @@ body {
 }
 
 /* --------------------------------------------------main- new car--------------------------------------- */
-
+. {
+  font-family: Arial, Helvetica, sans-serif;
+}
 section.newcars {
   margin: 60px auto;
 }

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/logo.png" />
+    <title>Let's Drive</title>
+</head>
+
+<body>
+    <!-- -------------------------------------------navbar---------------------------------------- -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logo.png" width="auto" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy" />
+            <img src="../images/Let’s Drive.png" class="d-inline-block align-top" alt="" loading="lazy" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">New Cars</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Used Cars
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Buy Cars</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sell Cars</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Luxury Cars
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Buy Cars</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Compare Cars</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="compareCars.html">Compare Cars</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Developers</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <img src="" alt="" />
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="../images/user-1.png" width="auto" height="30" class="d-inline-block align-top"
+                            loading="lazy" alt="" />
+                        Login / SignUp</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="newcars">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <img src="../WebsiteImages/CAR.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="../WebsiteImages/NEW CAR PIC.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item active">
+                    <img src="../WebsiteImages/home-page-banner-400.png" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card search" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Find Your Dream Car</h5>
+                    <select class="form-control" id="localbrand">
+                        <option>Sele
+                            ct Brand</option>
+                        <option>Audi</option>
+                        <option>BMW</option>
+                        <option>Land Rover</option>
+                        <option>Lamborghini</option>
+                    </select>
+                    <select class="form-control" id="localmodel">
+                        <option>Select Models</option>
+                        <option>Audi Q7</option>
+                        <option>BMW M6</option>
+                        <option>LandRover Velar</option>
+                        <option>Lamborghini</option>
+                    </select>
+                    <button type="button" class="btn btn-danger btn-lg btn-block">
+                        Block level button
+                    </button>
+                </div>
+            </div>
+            <div class="brand">
+                <h1>Audi</h1>
+                <div class="car-category">
+                    <a href="#">Audi</a>
+                    <a href="#">BMW</a>
+                    <a href="#">LandRover</a>
+                    <a href="#">Lamborghini</a>
+                    <hr>
+                    <div class="cars">
+                        <div class="card car" style="width: 18rem;">
+                            <img src="../CAR IMAGES/AUDI/AUDI Q7/AUDIQ7-1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Audi Q7</h3>
+                                <h5 class="card-text">Ex Showroom Price: <br><strong>45L INR</strong></h5>
+                                <button type="button" class="btn btn-danger">View Specifications</button>
+                            </div>
+                        </div>
+                        <div class="card car" style="width: 18rem;">
+                            <img src="../CAR IMAGES/AUDI/AUDI Q4/AUDI Q4-1jpeg.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Audi Q4</h3>
+                                <h5 class="card-text">Ex Showroom Price: <br><strong>65L INR</strong></h5>
+                                <button type="button" class="btn btn-danger">View Specifications</button>
+                            </div>
+                        </div>
+                        <div class="card car" style="width: 18rem;">
+                            <img src="../CAR IMAGES/AUDI/AUDI Q5/AUDI Q5-1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">A Q5</h3>
+                                <h5 class="card-text">Ex Showroom Price: <br><strong>55L INR</strong></h5>
+                                <button type="button" class="btn btn-danger">View Specifications</button>
+                            </div>
+                        </div>
+                        <div class="card car" style="width: 18rem;">
+                            <img src="../CAR IMAGES/AUDI/AUDI Q7/AUDIQ7-3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Audi Q7</h3>
+                                <h5 class="card-text">Ex Showroom Price: <br><strong>45L INR</strong></h5>
+                                <button type="button" class="btn btn-danger">View Specifications</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand">
+                    <h1>BMW</h1>
+                    <div class="car-category">
+                        <a href="#">Audi</a>
+                        <a href="#">BMW</a>
+                        <a href="#">LandRover</a>
+                        <a href="#">Lamborhgini</a>
+                        <hr>
+                        <div class="cars">
+                            <div class="card car" style="width: 18rem;">
+                                <img src="../CAR IMAGES/BMW/BMW M4/BMW M4-1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">BMW M4</h3>
+                                    <h5 class="card-text">Ex Showroom Price: <br><strong>45L INR</strong></h5>
+                                    <button type="button" class="btn btn-danger">View Specifications</button>
+                                </div>
+                            </div>
+                            <div class="card car" style="width: 18rem;">
+                                <img src="../CAR IMAGES/BMW/BMW M5/BMW M5-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">BMW M5</h3>
+                                    <h5 class="card-text">Ex Showroom Price: <br><strong>56L INR</strong></h5>
+                                    <button type="button" class="btn btn-danger">View Specifications</button>
+                                </div>
+                            </div>
+                            <div class="card car" style="width: 18rem;">
+                                <img src="../CAR IMAGES/BMW/BMW M8/BMW M8-2.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">BMW M8</h3>
+                                    <h5 class="card-text">Ex Showroom Price: <br><strong>75L INR</strong></h5>
+                                    <button type="button" class="btn btn-danger">View Specifications</button>
+                                </div>
+                            </div>
+                            <div class="card car" style="width: 18rem;">
+                                <img src="../CAR IMAGES/BMW/BMW M4/BMW M4-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">BMW M4</h3>
+                                    <h5 class="card-text">Ex Showroom Price: <br><strong>1Cr INR</strong></h5>
+                                    <button type="button" class="btn btn-danger">View Specifications</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------footer---------------------------------------------------------------- -->
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul>
+                        <li>About</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Let's Drive Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <ul>
+                        <li>Connect Us</li>
+                        <li><a href="#">1800-200-3000 (toll free)</a></li>
+                        <li><a href="#">contact@letsdrive.com</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <ul>
+                        <li>Others</li>
+                        <li><a href="#">Trustmarked used cars</a></li>
+                        <li><a href="#">Advertise with Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="social-logo" src="../images/facebook.png" alt="Facebook" />
+                    <img class="social-logo" src="../images/download.png" alt="Instagram" />
+                    <img class="social-logo" src="../images/twitter.png" alt="Twitter" />
+                    <img class="social-logo" src="../images/youtube.png" alt="Youtube" />
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright ©2020 Lets Drive Inc. All rights reserved. Privacy & Legal
+            Policies.
+        </div>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
