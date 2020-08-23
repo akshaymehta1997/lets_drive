@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../css/bootstrap-reboot.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../images/logo.png" />
-  <title>Index</title>
+  <title>Let's Drive</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">New Cars</a>
+          <a class="nav-link" href="#">New Cars</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -59,14 +59,9 @@
           <a class="nav-link" href="#">Developers</a>
         </li>
       </ul>
-    </div>
-    <div class="navbar-collapse collapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <img src="" alt="" />
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link openbtn" onclick="openNav()" href="#">
             <img src="../images/user-1.png" width="auto" height="30" class="d-inline-block align-top" loading="lazy"
               alt="" />
             Login / SignUp</a>
@@ -74,9 +69,50 @@
       </ul>
     </div>
   </nav>
-
+  <div class="popup-overlay"></div>
+  <div id="mySidepanel" class="sidepanel">
+    <div class="login">
+    <h2>Log in to Let's Drive </h2>
+    <div class="form-group">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <label for="login-email">Email address</label>
+      <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="login-password">Password</label>
+      <input type="password" class="form-control" id="login-password" placeholder="">
+    </div>
+    <button id="login" class="btn btn-danger btn-lg">Login</button>
+    <button id="SignUp-page" onclick="showSignUpPage()" class="btn btn-outline-danger btn-lg">SignUp</button>
+  </div>
+  <div class="signup">
+    <h2>Sign up for Let's Drive</h2>
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" >
+    </div>
+    <div class="form-group">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="">
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" class="form-control" id="confirm-password" placeholder="">
+    </div>
+    <button class="btn btn-danger btn-lg">SignUp</button>
+    <button onclick="showLoginPage()" class="btn btn-outline-danger btn-lg">Back</button>
+  </div>
+</div>
+<!-- -----------------------------------------------main-content------------------------------------------------- -->
   <section class="newcars">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselExampleFade" class=" banner carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item ">
           <img src="../WebsiteImages/CAR.jpg" class="d-block w-100" alt="..." />
@@ -88,8 +124,6 @@
           <img src="../WebsiteImages/home-page-banner-400.png" class="d-block w-100" alt="..." />
         </div>
       </div>
-    </div>
-    <div class="container">
       <div class="card search" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Find Your Dream Car</h5>
@@ -113,12 +147,14 @@
           </button>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="brand">
         <h1>Honda</h1>
-        <div class="car-category">
-          <a href="#">SUV</a>
-          <a href="#">Sedan</a>
-          <a href="#">Hatchback</a>
+        <div class="car-category row">
+          <a class="col-md-4" href="#">SUV</a>
+          <a class="col-md-4" href="#">Sedan</a>
+          <a class="col-md-4" href="#">Hatchback</a>
           <hr>
           <div class="cars">
             <div class="card car" style="width: 18rem;">
@@ -151,49 +187,6 @@
                 <h3 class="card-title">Honda CRV</h3>
                 <h5 class="card-text">Ex Showroom Price: <br><strong>7.5L INR</strong></h5>
                 <button type="button" class="btn btn-danger">View Specifications</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="brand">
-          <h1>Honda</h1>
-          <div class="car-category">
-            <a href="#">SUV</a>
-            <a href="#">Sedan</a>
-            <a href="#">Hatchback</a>
-            <hr>
-            <div class="cars">
-              <div class="card car" style="width: 18rem;">
-                <img src="../CAR IMAGES/HONDA CARS/SUV_s/CRV/CRV3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Honda CRV</h3>
-                  <h5 class="card-text">Ex Showroom Price: <br><strong>7.5L INR</strong></h5>
-                  <button type="button" class="btn btn-danger">View Specifications</button>
-                </div>
-              </div>
-              <div class="card car" style="width: 18rem;">
-                <img src="../CAR IMAGES/HONDA CARS/SUV_s/CRV/CRV3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Honda CRV</h3>
-                  <h5 class="card-text">Ex Showroom Price: <br><strong>7.5L INR</strong></h5>
-                  <button type="button" class="btn btn-danger">View Specifications</button>
-                </div>
-              </div>
-              <div class="card car" style="width: 18rem;">
-                <img src="../CAR IMAGES/HONDA CARS/SUV_s/CRV/CRV3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Honda CRV</h3>
-                  <h5 class="card-text">Ex Showroom Price: <br><strong>7.5L INR</strong></h5>
-                  <button type="button" class="btn btn-danger">View Specifications</button>
-                </div>
-              </div>
-              <div class="card car" style="width: 18rem;">
-                <img src="../CAR IMAGES/HONDA CARS/SUV_s/CRV/CRV3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Honda CRV</h3>
-                  <h5 class="card-text">Ex Showroom Price: <br><strong>7.5L INR</strong></h5>
-                  <button type="button" class="btn btn-danger">View Specifications</button>
-                </div>
               </div>
             </div>
           </div>
@@ -249,12 +242,13 @@
     </div>
     <div class="copyright">
       Copyright ©2020 Lets Drive Inc. All rights reserved. Privacy & Legal
-      Policies.
+      Policies my name is shubham.
     </div>
   </section>
 
   <script src="../js/jquery.min.js"></script>
   <script src="../js/bootstrap.js"></script>
+  <script src="../js/nav.js"></script>
 </body>
 
 </html>
