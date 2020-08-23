@@ -83,7 +83,9 @@ section.newcars {
   overflow: scroll;
   white-space: nowrap;
 }
-
+.brand .cars::-webkit-scrollbar{
+  display: none;
+}
 .brand .cars .car {
   display: inline-block;
   margin-right: 20px;
