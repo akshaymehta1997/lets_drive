@@ -42,3 +42,13 @@
 . {
   font-family: Arial, Helvetica, sans-serif;
 }
+#button{
+  font color: #808080;
+}
+ tr th{
+  text-align: center;
+  
+}
+tr td{
+  text-align: center;
+}
